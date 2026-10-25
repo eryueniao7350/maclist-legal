@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>隐私政策 · Mac-List 验机精灵</title>
+<style>:root{--bg:#f6f8fb;--fg:#1c2230;--muted:#5d6676;--card:#ffffff;--line:#e3e8ef;--accent:#2e78ff} @media (prefers-color-scheme:dark){:root{--bg:#121519;--fg:#eceef2;--muted:#a4a9b4;--card:#1b1f26;--line:#2a2f38;--accent:#5c9bff}} *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif} main{max-width:720px;margin:0 auto;padding:40px 16px 64px} header{display:flex;align-items:center;gap:14px;margin-bottom:28px} h1{font-size:26px;margin:0;line-height:1.3} .sub{color:var(--muted);font-size:14px;margin:2px 0 0} h2{font-size:18px;margin:32px 0 8px} ul{padding-left:1.2em} .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:16px 0} a{color:var(--accent)} hr{border:0;border-top:1px solid var(--line);margin:48px 0} nav{margin-top:40px;font-size:14px;color:var(--muted)}</style>
+</head>
+<body>
+<main>
+<header>
+<svg viewBox="0 0 56 56" width="56" height="56" aria-hidden="true"><rect width="56" height="56" rx="13" fill="#2e78ff"/><rect x="12" y="14" width="30" height="20" rx="2.5" fill="none" stroke="#fff" stroke-width="3"/><rect x="8" y="36" width="38" height="3.5" rx="1.75" fill="#fff"/><circle cx="41" cy="38" r="10" fill="#2a5fe0"/><circle cx="41" cy="38" r="8.5" fill="#34c759"/><path d="M37 38.2l3 3 5.2-5.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div>
+<h1>Mac-List 验机精灵 隐私政策</h1>
+<p class="sub">生效日期：2026 年 10 月 25 日 · <a href="#en">English</a></p>
+</div>
+</header>
+
+<div class="card">
+<strong>一句话说明：</strong>Mac-List 完全在你的 Mac 上运行。没有服务器、不需要注册账号，没有广告、统计或任何第三方 SDK。我们（开发者）收不到、也看不到你的任何数据。
+</div>
+
+<h2>1. 我们收集哪些信息</h2>
+<p><strong>不收集任何信息。</strong>检测结果、序列号、验机记录都不会发送给开发者或任何第三方。App 本身不发起任何网络请求。</p>
+
+<h2>2. App 在本机读取哪些信息</h2>
+<p>为了检测这台 Mac，App 会在本机读取：机型、芯片、内存、序列号、macOS 版本；电池健康度和循环次数；硬盘型号、容量和 SMART 状态；屏幕、显卡和接口信息；Wi-Fi、蓝牙、触控 ID 是否正常；发热状态；是否登录了 Apple 账户；是否被远程管理（MDM）。这些信息通过 macOS 自带的接口和 <code>system_profiler</code>、<code>profiles</code> 两个系统工具读取，只用来在 App 里显示检测结果。</p>
+<p>App 申请了「网络（客户端）」权限，仅仅是因为 macOS 要求有这项权限才能读取 Wi-Fi 网卡状态。App 不会用它连接任何服务器。</p>
+
+<h2>3. 摄像头、麦克风和蓝牙</h2>
+<ul>
+<li><strong>摄像头</strong>：只在摄像头测试中显示实时画面，不拍照、不录像、不保存。</li>
+<li><strong>麦克风</strong>：只在麦克风测试中显示音量大小，不录音、不保存。</li>
+<li><strong>蓝牙</strong>：只读取蓝牙是否可用，不扫描、不连接任何设备。</li>
+</ul>
+<p>你可以随时在「系统设置 › 隐私与安全性」里关闭这些权限，关闭后对应的测试会提示无法进行。</p>
+
+<h2>4. 保存在你 Mac 上的信息</h2>
+<ul>
+<li><strong>验机记录</strong>：每次验机的结果（包含序列号）保存在 App 自己的沙盒文件夹里，只有这个 App 能读取。你可以在「历史记录」里删除任意一条；删除 App 时会一并删除。</li>
+<li><strong>导出的报告</strong>：只有在你点「导出」并选择保存位置后才会生成文件。导出时序列号默认打码（例如 C02X••••6L4），除非你主动选择显示完整序列号。报告发给谁由你决定。</li>
+<li><strong>硬盘测速</strong>：测速时会在 App 的临时文件夹写入一个 1 GB 的临时文件，测完立即删除。</li>
+</ul>
+
+<h2>5. 打开外部页面</h2>
+<p>在「人工核对」里，你可以点按钮打开「系统设置」或 Apple 的保修查询网页（checkcoverage.apple.com）。网页在你的浏览器中打开，适用 <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple 隐私政策</a>。复制序列号只会写入你的剪贴板。</p>
+
+<h2>6. 未成年人</h2>
+<p>Mac-List 不收集任何人的个人信息。</p>
+
+<h2>7. 政策更新</h2>
+<p>如果本政策有变化，我们会更新本页面并修改上方的生效日期。</p>
+
+<h2>8. 联系我们</h2>
+<p>如有任何疑问，请发送邮件至：<a href="mailto:leaf1979yezi@gmail.com">leaf1979yezi@gmail.com</a></p>
+
+<hr id="en">
+
+<div lang="en">
+<h1>Mac-List Privacy Policy</h1>
+<p class="sub">Effective 25 October 2026</p>
+
+<div class="card">
+<strong>In short:</strong> Mac-List runs entirely on your Mac. There is no server and no account, and no ads, analytics or third-party SDKs. We, the developer, never receive or see any of your data.
+</div>
+
+<h2>1. What we collect</h2>
+<p><strong>Nothing.</strong> Check results, serial numbers and saved inspections are never sent to the developer or anyone else. The app itself makes no network requests.</p>
+
+<h2>2. What the app reads on your Mac</h2>
+<p>To inspect the Mac, the app reads on the device: model, chip, memory, serial number and macOS version; battery health and cycle count; drive model, capacity and SMART status; display, graphics and port information; whether Wi-Fi, Bluetooth and Touch ID work; the thermal state; whether an Apple Account is signed in; and whether the Mac is under remote management (MDM). It uses macOS APIs and the built-in <code>system_profiler</code> and <code>profiles</code> tools, only to show the results in the app.</p>
+<p>The app has the "outgoing network connections" permission only because macOS requires it to read the Wi-Fi interface status. It is never used to connect to any server.</p>
+
+<h2>3. Camera, microphone and Bluetooth</h2>
+<ul>
+<li><strong>Camera</strong>: shows a live preview during the camera test only. Nothing is photographed, recorded or saved.</li>
+<li><strong>Microphone</strong>: shows the input level during the microphone test only. Nothing is recorded or saved.</li>
+<li><strong>Bluetooth</strong>: reads whether Bluetooth is available. It does not scan for or connect to any device.</li>
+</ul>
+<p>You can turn these permissions off at any time in System Settings › Privacy &amp; Security; the related test then says it cannot run.</p>
+
+<h2>4. What stays on your Mac</h2>
+<ul>
+<li><strong>Saved inspections</strong>: each inspection's results, including the serial number, are stored in the app's own sandbox folder, which only this app can read. Delete any of them in History; deleting the app removes them all.</li>
+<li><strong>Exported reports</strong>: a file is created only when you choose Export and pick where to save it. The serial number is masked by default (for example C02X••••6L4) unless you choose to show it in full. You decide who receives the report.</li>
+<li><strong>Drive speed test</strong>: writes a 1 GB temporary file to the app's temporary folder and deletes it as soon as the test ends.</li>
+</ul>
+
+<h2>5. Opening other pages</h2>
+<p>In Manual Checks, buttons can open System Settings or Apple's coverage page (checkcoverage.apple.com). The web page opens in your browser and is covered by the <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>. Copying the serial number only places it on your clipboard.</p>
+
+<h2>6. Children</h2>
+<p>Mac-List collects no personal information from anyone.</p>
+
+<h2>7. Changes</h2>
+<p>If this policy changes, we will update this page and the effective date above.</p>
+
+<h2>8. Contact</h2>
+<p>Questions? Email <a href="mailto:leaf1979yezi@gmail.com">leaf1979yezi@gmail.com</a>.</p>
+</div>
+
+<nav><a href="index.html">Mac-List</a> · <a href="support.html">技术支持 / Support</a></nav>
+</main>
+</body>
+</html>
